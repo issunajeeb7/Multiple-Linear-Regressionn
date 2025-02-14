@@ -1,4 +1,4 @@
-# Car Fuel Efficiency Prediction
+# 🚗 Car Fuel Efficiency Prediction
 
 ## Overview
 This Jupyter notebook implements a Multiple Linear Regression model to predict city MPG (Miles Per Gallon) for cars using various vehicle specifications.
