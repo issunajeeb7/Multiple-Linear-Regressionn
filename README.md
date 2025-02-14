@@ -3,7 +3,7 @@
 ## Overview
 This Jupyter notebook implements a Multiple Linear Regression model to predict city MPG (Miles Per Gallon) for cars using various vehicle specifications.
 
-## Dependencies
+## Requirements
 ```python
 pandas
 seaborn
@@ -37,33 +37,6 @@ scikit-learn
 - Train-test split (80-20 ratio)
 - Model: Multiple Linear Regression
 - Target Variable: City MPG
-
-## Code Structure
-
-```python
-# Data Loading and Preprocessing
-file_path = "cars.csv"
-df = pd.read_csv(file_path)
-
-# Feature Engineering
-numerical_features = [
-    "Dimensions.Height", "Dimensions.Length", "Dimensions.Width",
-    "Engine Information.Number of Forward Gears",
-    "Engine Information.Engine Statistics.Horsepower",
-    "Engine Information.Engine Statistics.Torque"
-]
-
-categorical_features = [
-    "Engine Information.Driveline",
-    "Engine Information.Transmission",
-    "Fuel Information.Fuel Type"
-]
-
-# Model Training and Evaluation
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-model = LinearRegression()
-model.fit(X_train, y_train)
-```
 
 ## Visualization
 - Correlation Matrix Heatmap
